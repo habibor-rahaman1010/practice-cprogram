@@ -11,10 +11,11 @@ int is_prime(int p){
     else if(p == 2){
         flag = 1;
     }
-
-    for(i = 2; i < p; i++){
-        if(p % i == 0){
-            flag = 0;
+    else{
+        for(i = 2; i < p; i++){
+            if(p % i == 0){
+                flag = 0;
+            }
         }
     }
     return flag;
@@ -33,7 +34,6 @@ int main() {
     else{
         printf("%d is not a prime number! \n", n);
     }
-
 
 return 0;
 }
