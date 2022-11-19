@@ -5,6 +5,13 @@
 int is_prime(int p){
     int i, flag = 1;
 
+    if(p == 1){
+        flag = 0;
+    }
+    else if(p == 2){
+        flag = 1;
+    }
+
     for(i = 2; i < p; i++){
         if(p % i == 0){
             flag = 0;
