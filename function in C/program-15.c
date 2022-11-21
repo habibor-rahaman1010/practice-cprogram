@@ -1,5 +1,7 @@
 // Nested function in c program....
 
+// f(x, y) = sqrt(|x - 3| sqrt(y + 4))  ??
+
 #include <stdio.h>
 #include <math.h>
 
@@ -27,10 +29,10 @@ float f(int a, int b){
 
 int absolute(int n){
     if(n >= 0){
-        return n;
+        return n - 3;
     }
     else{
-        return (-1) * n;
+        return (-1) * n - 3;
     }
 }
 
