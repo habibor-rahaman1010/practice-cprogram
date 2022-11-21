@@ -25,7 +25,8 @@ int is_prime() {
 
 
 int main() {
-
+    int n;
+    printf("Enter the value of n: ");
 
 return 0;
 }
