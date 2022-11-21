@@ -13,7 +13,7 @@ int is_seven() {
 
 }
 
-int digi_summation() {
+int digit_summation() {
 
 
 }
@@ -27,6 +27,13 @@ int is_prime() {
 int main() {
     int n;
     printf("Enter the value of n: ");
+
+    if(is_seven() == 1 && digit_summation() == 1 && is_prime() == 1){
+        printf("It\'s spacial number of Habib!");
+    }
+    else{
+        printf("Dump number!");
+    }
 
 return 0;
 }
