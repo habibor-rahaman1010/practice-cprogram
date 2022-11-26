@@ -3,9 +3,18 @@
 #include <stdio.h>
 
 int GCD(int x, int y) {
-    int i, gcd;
+    int i, gcd, small, big;
 
-    for(i = x; i >= 1; i--){
+    if(x < y){
+        small = x;
+        big = y;
+    }
+    else{
+        small = y;
+        big = x;
+    }
+
+    for(i = small; i >= 1; i--){
         if(x % i == 0 && y % i == 0){
             gcd = i;
             break;
@@ -20,7 +29,7 @@ int main() {
     scanf("%d %d", &a, &b);
 
     int result = GCD(a, b);
-    printf("GCD is: %d", result);
+    printf("GCD is: %d \n", result);
 
 return 0;
 }

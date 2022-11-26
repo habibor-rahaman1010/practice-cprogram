@@ -3,9 +3,18 @@
 #include <stdio.h>
 
 int LCM(int x, int y) {
-    int i, lcm;
+    int i, lcm, small, big;
 
-    for(i = x; i >= 1; i--){
+    if(x < y){
+        small = x;
+        big = y;
+    }
+    else{
+        small = y;
+        big = x;
+    }
+
+    for(i = small; i >= 1; i--){
         if(x % i == 0 && y % i == 0){
             lcm = i;
             break;
@@ -20,7 +29,7 @@ int main() {
     scanf("%d %d", &a, &b);
 
     int result = LCM(a, b);
-    printf("LCM is: %d", (a * b) / result);
+    printf("LCM is: %d  \n", (a * b) / result);
 
 return 0;
 }
