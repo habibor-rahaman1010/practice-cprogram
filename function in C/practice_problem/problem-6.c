@@ -1,4 +1,4 @@
-// even number in c program...
+// even and odd number in c program...
 
 #include <stdio.h>
 
@@ -18,3 +18,4 @@ int main() {
 
 return 0;
 }
+
