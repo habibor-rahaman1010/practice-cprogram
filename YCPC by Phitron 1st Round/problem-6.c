@@ -2,22 +2,26 @@
 
 #include <stdio.h>
 
-void find_parity(int n) {
+int is_even(int n) {
     if(n % 2 == 0){
-        printf("Even \n");
+        return 1;
     }
     else{
-        printf("Odd \n");
+        return 0;
     }
-
-return;
 }
 
 int main() {
     int n;
     printf("Enter the value of n: ");
     scanf("%d", &n);
-    find_parity(n);
+
+    if(is_even(n)){
+        printf("Even \n");
+    }
+    else{
+        printf("Odd \n");
+    };
 
 return 0;
 }
