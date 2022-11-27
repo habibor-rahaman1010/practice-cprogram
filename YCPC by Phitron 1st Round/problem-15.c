@@ -1,8 +1,7 @@
-
 #include <stdio.h>
 
 int main() {
-    printf("Hello hello programmer");
+    printf("Problem solve right now");
 
 return 0;
 }
