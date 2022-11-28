@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void myfunc(char digit[100]) {
-    int i = 0, a = 0; b = 0; c = 0;
+    int i = 0, a = 0, b = 0, c = 0;
 
     while(digit[i] != '\0') {
         if(digit[i] == '1'){
@@ -15,6 +15,12 @@ void myfunc(char digit[100]) {
         }
 
         i++;
+    }
+    if(a==1 && b==1 && c==1){
+        printf("Yes");
+    }
+    else{
+        printf("No \n");
     }
 
 return;
