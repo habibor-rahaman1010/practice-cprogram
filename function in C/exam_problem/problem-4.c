@@ -17,11 +17,18 @@ void myFunc(int n, int k) {
         }
     }
 
-    int len = sizeof(number) / sizeof(number[0]);
-
     for(i = 1; i <= n; i++){
+        if(i % 2 != 0){
+            number[index] = i;
+            index++;
+        }
+    }
+
+    for(i = 0; i < n; i++){
         printf("%d ", number[i]);
     }
+    printf("\n");
+    printf("The %dth element in this sequence is %d \n", k, number[k -1]);
 
 
 return;
