@@ -9,9 +9,11 @@ void myFunc(int n, int k) {
         number[i] = 0;
     }
 
-    for(i = 1; i <= n; i ++){
+    int index = 0;
+    for(i = 1; i <= n; i++){
         if(i % 2 == 0){
-            number[i] = i;
+            number[index] = i;
+            index++;
         }
     }
 
