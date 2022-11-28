@@ -29,18 +29,7 @@ void string_concatenation(char s1[1000], int N) {
 return;
 }
 
-<<<<<<< HEAD
-int main()
-{
-    char s1[1000];
 
-    int length, j, i, N;
-
-    printf("Enter your string size: ");
-    scanf("%d", &N);
-
-    printf("Enter your string: ");
-=======
 int main() {
     int N;
     char s1[1000];
@@ -48,7 +37,6 @@ int main() {
     scanf("%d", &N);
 
     printf("Enter string: ");
->>>>>>> production
     scanf("%s", s1);
 
     string_concatenation(s1, N);
