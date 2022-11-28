@@ -6,7 +6,7 @@ void array_sort(int number[], int N) {
     int i, j, tamp;
 
     for(i = 0; i < N; i++){
-        for(j  = 0; i < j - 1; j++){
+        for(j  = 0; j < N - 1; j++){
             if(number[j] > number[j + 1]){
                 tamp = number[j];
                 number[j] = number[j + 1];
