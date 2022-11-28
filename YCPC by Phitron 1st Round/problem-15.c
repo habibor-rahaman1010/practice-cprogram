@@ -1,3 +1,5 @@
+//concatenation  in c program...
+
 #include <stdio.h>
 
 void string_concatenation(char s1[1000], int N) {
@@ -27,6 +29,7 @@ void string_concatenation(char s1[1000], int N) {
 return;
 }
 
+<<<<<<< HEAD
 int main()
 {
     char s1[1000];
@@ -37,6 +40,15 @@ int main()
     scanf("%d", &N);
 
     printf("Enter your string: ");
+=======
+int main() {
+    int N;
+    char s1[1000];
+    printf("Enter your string number: ");
+    scanf("%d", &N);
+
+    printf("Enter string: ");
+>>>>>>> production
     scanf("%s", s1);
 
     string_concatenation(s1, N);
