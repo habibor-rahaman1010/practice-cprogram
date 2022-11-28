@@ -28,6 +28,7 @@ int main() {
     int a = factorial(f1);
     printf("Factorial = %d \n", a);
     printf("\n");
+
     int f2, f3;
     printf("Enter the value of 2 factorial: ");
     scanf("%d %d", &f2, &f3);
