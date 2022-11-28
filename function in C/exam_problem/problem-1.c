@@ -19,6 +19,7 @@ return;
 
 int main() {
     char str[100];
+    printf("Enter your string: ");
     scanf("%s", str);
 
     chnage_small(str);
