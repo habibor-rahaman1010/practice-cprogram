@@ -1,3 +1,5 @@
+//if the digit string in 1, 7, 9 will be exist print yes other wise no in c program....
+
 #include <stdio.h>
 
 void myfunc(char digit[100]) {
