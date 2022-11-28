@@ -22,9 +22,10 @@ void matrix_multiply() {
             scanf("%d", &number2[i][j]);
         }
     }
+    printf("\n");
 
     //multiplication 2 array here...
-    multiply = 1;
+    int multiply = 1;
     for(i = 1; i <= row; i++){
         for(j = 1; j <= col; j++){
            multiply = number1[i][j] * number2[i][j];
