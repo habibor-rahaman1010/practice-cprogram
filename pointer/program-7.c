@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main() {
-    double ara[5] = {23, 45, 67, 88, 98};
+    long long int ara[5] = {23, 45, 67, 88, 98};
 
     printf("%p \n", &ara[0]);
     printf("%p \n", &ara[1]);
@@ -22,8 +22,4 @@ int main() {
 
 return 0;
 }
-
-
-
-
 
