@@ -9,17 +9,19 @@ int take_radius() {
     return r;
 }
 
-float calculate(int r) {
-    return (3.1416 * r * r);
+void calculate(int r) {
+    float area =  (3.1416 * r * r);
+    printf("%0.2f", area);
+
 }
 
 int main() {
     int r;
     r = take_radius();
 
-    float area = calculate(r);
-    printf("%0.2f", area);
+    calculate(r);
 
 return 0;
 }
+
 
