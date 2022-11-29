@@ -1,11 +1,12 @@
 // swapping in c program use pointer....
+//it's call pass bye reference in c program..
 
 #include <stdio.h>
 
 void swapping(int *p1, int *p2) {
     int tamp = *p1;
-    p1 = *p2;
-    p2 = tamp;
+    *p1 = *p2;
+    *p2 = tamp;
 }
 
 int main() {
