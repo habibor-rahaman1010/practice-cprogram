@@ -9,7 +9,6 @@ int main() {
 	for(int i = 0; i < 5; i++){
 		ptintf("%d ", ara[i]);
 	}
-	
 
 return 0;
 }
