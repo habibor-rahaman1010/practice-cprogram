@@ -6,7 +6,7 @@ int main() {
 	
 	int ara[5] = {34, 45, 56, 67, 78}
 	
-	
+
 return 0;
 }
 
