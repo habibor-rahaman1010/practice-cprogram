@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main() {
-    int ara[5] = {23, 45, 67, 88, 98};
+    double ara[5] = {23, 45, 67, 88, 98};
 
     printf("%p \n", &ara[0]);
     printf("%p \n", &ara[1]);
