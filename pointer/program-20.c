@@ -11,10 +11,13 @@ int main() {
     int ****n = &r;
     int *****m = &n;
     int ******x = &m;
+    int *******l = &x;
 
-    ******x = 64;
+    *******l = 94;
 
     printf("%d \n", a);
+    printf("%d \n", *******l);
 
 return 0;
 }
+
