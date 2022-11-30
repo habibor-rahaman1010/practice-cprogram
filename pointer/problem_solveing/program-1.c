@@ -5,10 +5,25 @@ Now print the total count of strictly less and strictly greater value from k. Im
 
 #include <stdio.h>
 
-void myFunc(ara[], n) {
+void myFunc(int ara[], int n) {
+    printf("Enter the elements of array: ");
 
+    int i;
+    for(i = 0; i < n; i++){
+        scanf("%d", &ara[i]);
+    }
 
-return 0;
+    int count = 0, k;
+    printf("Enter the value of k: ");
+    scanf("%d", &k);
+    for(i = 0; i < n; i++){
+        if(ara[i] != k){
+            count++;
+        }
+    }
+    printf("%d \n", count);
+
+return;
 }
 
 int main() {
