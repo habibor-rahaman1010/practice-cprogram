@@ -1,4 +1,7 @@
-
+/*
+Write a C program to take one positive integer N, the size of an array as input. Then take a positive integer array
+of size N . And the next line will contain k
+*/
 
 #include <stdio.h>
 int sort_accending(int ara[], int n, int k) {
