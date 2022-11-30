@@ -2,9 +2,11 @@
 
 #include <stdio.h>
 
-void recursion(int n) {
-    recursion(n - 1);
-    printf("%d ", n);
+int recursion(int n) {
+    if(n > 0){
+        printf("%d ", n);
+        recursion(n - 1);
+    }
 }
 
 int main() {
