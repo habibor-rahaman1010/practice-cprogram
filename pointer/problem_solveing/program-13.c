@@ -4,7 +4,7 @@
 
 int recursion(int n) {
     if(n){
-       return recursion(n - 1) + n;
+       return n + recursion(n - 1);
     }
 }
 
@@ -18,3 +18,4 @@ int main() {
 
 return 0;
 }
+
