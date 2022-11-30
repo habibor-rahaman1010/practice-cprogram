@@ -8,7 +8,7 @@ For example n=5 , that means sum of first n natural number is 15(1+2+3+4+5) . Im
 int recursion(int n) {
 
     if(n){
-        printf("%d \n", n + recursion(n - 1));
+        return n + recursion(n - 1);
     }
     else{
         return 0;
@@ -20,7 +20,9 @@ int main() {
     printf("Enter the value of n: ");
     scanf("%d", &n);
 
-    recursion(n);
+    int result = recursion(n);
+    printf("%d ", result);
 
 return 0;
 }
+
