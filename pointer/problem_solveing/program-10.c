@@ -22,9 +22,12 @@ int main() {
     int len = sizeof(number) / sizeof(number[0]);   // int lne = sizeof(number) / sizeof(int);
 
     int maxx, minn;
-    int *p1 = &maxx, *p2 = minn;
+    int *p1 = &maxx, *p2 = &minn;
 
     find_max_min(number, len, p1, p2);
+
+    printf("Max is: %d \n", *p1);
+    printf("Min is: %d \n", *p2);
 
 
 return 0;
