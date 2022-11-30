@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 int recursion(int n) {
-    if(n > 0){
-        printf("%d ", n);
+    if(n){
         recursion(n - 1);
     }
+     printf("%d ", n);
 }
 
 int main() {
