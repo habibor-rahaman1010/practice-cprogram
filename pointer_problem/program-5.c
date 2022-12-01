@@ -1,4 +1,4 @@
-// array sort use bubble sort in c program... small to large
+// array sort use bubble sort in c program... large to small
 
 #include <stdio.h>
 
