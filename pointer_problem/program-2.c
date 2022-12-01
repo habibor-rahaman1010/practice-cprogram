@@ -1,4 +1,4 @@
-// array sort use bubble sort in c program...
+// array sort use bubble sort in c program... small to learg
 
 #include <stdio.h>
 
@@ -12,9 +12,9 @@ void bubble_sort(int ara[], int n) {
                 ara[j + 1] = tamp;
             }
         }
-        for(i = 0; i < n; i++){
-            printf("%d ", ara[i]);
-        }
+    }
+    for(i = 0; i < n; i++){
+        printf("%d ", ara[i]);
     }
 }
 
