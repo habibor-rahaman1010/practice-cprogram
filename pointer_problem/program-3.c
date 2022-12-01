@@ -1,4 +1,4 @@
-// array sort use bubble sort in c program... small to learg
+// array sort use bubble sort in c program... small to large
 
 #include <stdio.h>
 
@@ -6,7 +6,7 @@ void bubble_sort(int ara[], int n) {
     int i, j, tamp;
     for(i = 0; i < n; i++){
         for(j = 0; j < n - 1; j++){
-            if(ara[j] > ara[j + 1]){
+            if(ara[j] < ara[j + 1]){
                 tamp = ara[j];
                 ara[j] = ara[j + 1];
                 ara[j + 1] = tamp;
