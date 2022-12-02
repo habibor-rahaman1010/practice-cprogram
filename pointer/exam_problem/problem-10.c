@@ -5,12 +5,15 @@ int is_beautiful(int *ara, int *n) {
     int i, j, counter = 0;
 
     for(i = 0; i < *n; i++){
-        if(*(ara + i) % 10 == 7){
-            counter++;
-            *(ara + i) /= 10;
-        };
+        for(j = 0; j < 2; j++){
+             if(*(ara + i) % 10 == 7){
+                counter++;
+                *(ara + j) /= 10;
+            };
+        }
     }
-printf("%d ", counter);
+
+    printf("%d ", counter);
 }
 
 int main() {
