@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 
-
 //divisible by 3
 int divisible3(int ara[], int n) {
     int i, count3 = 0;
@@ -27,7 +26,10 @@ int divisible3(int ara[], int n) {
 int divisible5(int ara[], int n) {
     int i, count5 = 0;
     for(i = 0; i < n; i++){
-        if(ara[i] % 5 == 0){
+        if(ara[i] % 5 == 0 && ara[i] % 3 == 0){
+            continue;
+        }
+        else if(ara[i] % 5 == 0){
             count5++;
         }
     }
