@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 
-
 //divisible by 3
 int divisible3(int ara[], int n) {
     int i, count3 = 0;
@@ -53,18 +52,17 @@ int main() {
         int result2 = divisible5(ara, n);
 
         if(result == -1 && result2 == -1){
-            printf("%d \n", -1);
+            printf("Ans is: %d \n", -1);
         }
         else if(result == -1){
-            printf("%d \n", result2);
+            printf("Ans is: %d \n", result2);
         }
         else if(result2 == -1){
-            printf("%d \n", result);
+            printf("Ans is: %d \n", result);
         }
         else if(result > 0 && result2 > 0){
-            printf("%d \n", result + result2);
+            printf("Ans is: %d \n", result + result2);
         }
-
     }
     else{
         printf("Constraints is: (n >= 1 && n <= 100) \n");
@@ -72,3 +70,4 @@ int main() {
 
 return 0;
 }
+
