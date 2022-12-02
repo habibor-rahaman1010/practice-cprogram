@@ -15,7 +15,6 @@ int divisible3(int ara[], int n) {
         }
     }
     if(count3 > 0){
-        printf("by three: %d \n", count3);
         return count3;
     }
     else{
@@ -32,7 +31,6 @@ int divisible5(int ara[], int n) {
         }
     }
     if(count5 > 0){
-        printf("by five: %d\n", count5);
         return count5;
     }
     else{
@@ -58,13 +56,13 @@ int main() {
             printf("%d \n", -1);
         }
         else if(result == -1){
-            printf("ans: %d \n", result2);
+            printf("%d \n", result2);
         }
         else if(result2 == -1){
-            printf("ans: %d \n", result);
+            printf("%d \n", result);
         }
         else if(result > 0 && result2 > 0){
-            printf("ans: %d \n", result + result2);
+            printf("%d \n", result + result2);
         }
 
     }
