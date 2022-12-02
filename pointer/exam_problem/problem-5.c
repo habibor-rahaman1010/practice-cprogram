@@ -2,18 +2,7 @@
 #include <stdio.h>
 
 int do_sum(int ara[], int n) {
-    int i, sum = 0;
-
-    for(i = 1; i <= n; i++){
-        if(ara[i] % 2 != 0 && i % 2 != 0){
-            sum = ara[i] + i;
-        }
-        else{
-            sum = ara[i] + i;
-        }
-    }
-    printf("%d", sum);
-    //return sum;
+    printf("%d \n", ara[1] + 2);
 }
 
 int main() {
@@ -27,7 +16,6 @@ int main() {
     }
 
     int result = do_sum(ara, n);
-    printf("%d \n", result);
 
 return 0;
 }
