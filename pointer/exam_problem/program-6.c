@@ -15,6 +15,7 @@ int divisible3(int ara[], int n) {
         }
     }
     if(count3 > 0){
+        printf("by three: %d \n", count3);
         return count3;
     }
     else{
@@ -31,6 +32,7 @@ int divisible5(int ara[], int n) {
         }
     }
     if(count5 > 0){
+        printf("by five: %d\n", count5);
         return count5;
     }
     else{
@@ -45,7 +47,6 @@ int main() {
 
     if(n >= 1 && n <= 100){
         int ara[n], i;
-        printf("Enter your elements: ");
         for(i = 0; i < n; i++){
             scanf("%d", &ara[i]);
         }
@@ -57,7 +58,9 @@ int main() {
             printf("%d \n", -1);
         }
         else{
-            printf("%d \n", result + result2);
+            printf("ans: %d \n", result + result2);
+            printf("answer by three: %d \n", result);
+            printf("answer by five: %d \n", result2);
         }
 
     }
