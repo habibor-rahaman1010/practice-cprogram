@@ -57,10 +57,14 @@ int main() {
         if(result == -1 && result2 == -1){
             printf("%d \n", -1);
         }
-        else{
+        else if(result == -1){
+            printf("ans: %d \n", result2);
+        }
+        else if(result2 == -1){
+            printf("ans: %d \n", result);
+        }
+        else if(result > 0 && result2 > 0){
             printf("ans: %d \n", result + result2);
-            printf("answer by three: %d \n", result);
-            printf("answer by five: %d \n", result2);
         }
 
     }
