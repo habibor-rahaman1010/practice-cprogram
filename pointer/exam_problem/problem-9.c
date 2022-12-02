@@ -1,23 +1,53 @@
 // Mixed Array
 
 #include <stdio.h>
+#include <math.h>
+
+double even_average(int *sum, int *even_counter) {
+    return (double) *sum / *even_counter;
+}
+
+double get_average(int *ara,  int *n){
+    int sum = 0, i, even_counter = 0;
+    double avg = 0;
+
+    for(i = 0; i < *n; i++){
+        if(*(ara + i) % 2 == 0){
+            sum += *(ara + i);
+            even_counter++;
+        }
+    }
+    avg = even_average(&sum, &even_counter);
+    return (double)avg;
+}
 
 int get_prime(int *ara, int *n) {
-    int i, counter = 0;
+    int i, j, counter = 0;
 
-    for(i = 2; i < *n; i++){
-        if(*(ara) == 2){
-            counter++;
+    for(i = 0; i < *n; i++){
+        int flag = 1;
+
+        if(*(ara + i) == 2){
+            flag = 1;
         }
 
-        if(*(ara + i) % 2 == 0){
-            continue;
+        if(*(ara + i) <= 1){
+            flag = 0;
         }
-        else{
+
+        for(j = 2; j <= sqrt(*(ara + i)); j++){
+
+            if(*(ara + i) % j == 0){
+                flag = 0;
+                break;
+            }
+        }
+        if(flag){
             counter++;
         }
     }
-    printf("%d ", counter);
+
+    return counter;
 }
 
 int main() {
@@ -30,6 +60,11 @@ int main() {
         scanf("%d", &ara[i]);
     }
 
-    int ans = get_prime(ara, &n);
+    int prime_count = get_prime(ara, &n);
+    double average = get_average(ara, &n);
+
+    printf("Prime numbers: %d \n", prime_count);
+    printf("Average of all even integers: %0.2lf \n", average);
+
 return 0;
 }
