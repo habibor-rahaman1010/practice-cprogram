@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 
+
 //divisible by 3
 int divisible3(int ara[], int n) {
     int i, count3 = 0;
@@ -14,7 +15,6 @@ int divisible3(int ara[], int n) {
         }
     }
     if(count3 > 0){
-        printf("%d ", count3);
         return count3;
     }
     else{
@@ -26,15 +26,11 @@ int divisible3(int ara[], int n) {
 int divisible5(int ara[], int n) {
     int i, count5 = 0;
     for(i = 0; i < n; i++){
-        if(ara[i] % 5 == 0 && ara[i] % 3 == 0){
-            continue;
-        }
-        else if(ara[i] % 5 == 0){
+        if(ara[i] % 5 == 0){
             count5++;
         }
     }
     if(count5 > 0){
-        printf("%d\n", count5);
         return count5;
     }
     else{
@@ -49,6 +45,7 @@ int main() {
 
     if(n >= 1 && n <= 100){
         int ara[n], i;
+        printf("Enter your elements: ");
         for(i = 0; i < n; i++){
             scanf("%d", &ara[i]);
         }
