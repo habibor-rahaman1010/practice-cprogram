@@ -2,31 +2,35 @@
 You have given a series, 1+2+3-4-5-6+7+8+9-10-11-12+......N . Your task to print the sum of the Nth element.
 */
 
-
 #include <stdio.h>
 
-void do_sum() {
-    int n;
-    printf("Enter the value of n (1 + 2 + 3 - 4 - 5 - 6 and so on): ");
-    scanf("%d", &n);
+int do_sum(int n) {
     int i, sum = 0;
+    int ara[n];
+    printf("Enter the value of ara: ");
+    for(i = 0; i < n; i++){
+        scanf("%d", &ara[i]);
+    }
 
     for(i = 0; i < n; i++){
-        if(n > 0){
-            sum += i;
+        if(ara[i] > 0){
+            sum += ara[i];
         }
-        else if(n < 0){
-            sum += -i;
+        else if(ara[i] < 0){
+            sum += ara[i];
         }
     }
     printf("%d", sum);
 
-return;
+return 0;
 }
 
 int main() {
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
 
-    do_sum();
+    int result = do_sum(n);
 
 return 0;
 }
