@@ -1,11 +1,11 @@
-// array element swap in c program use function and pointer....
+// array element swap in c program use function....
 
 #include <stdio.h>
 
-void swap_ara(int *ara, int *L, int *R) {
-    int tamp = *(ara + *L);
-    *(ara + *L) = *(ara + *R);
-    *(ara + *R) = tamp;
+void swap_ara(int ara[], int L, int R) {
+    int tamp = ara[L];
+    ara[L] = ara[R];
+    ara[R] = tamp;
 
 }
 
@@ -18,7 +18,7 @@ void do_query(int ara[], int n) {
         printf("Enter the value of (L and R): ");
         for(i = 1; i <= q; i++){
             scanf("%d %d", &L, &R);
-            swap_ara(ara, &L, &R);
+            swap_ara(ara, L, R);
         }
 
         for(i = 1; i <= n; i++){
@@ -43,3 +43,4 @@ int main() {
 
 return 0;
 }
+
