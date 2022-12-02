@@ -2,7 +2,19 @@
 #include <stdio.h>
 
 int do_sum(int ara[], int n) {
-    printf("%d \n", ara[1] + 2);
+    int i, even_sum = 0, odd_sum = 0;
+
+    for(i = 1; i <= n; i++){
+        if(ara[i] % 2 != 0 && i % 2 != 0){
+            odd_sum = ara[i] + i;
+        }
+        else if(ara[i] % 2 == 0 && i % 2 == 0){
+            even_sum = ara[i] + i;
+        }
+    }
+    printf("%d", even_sum + odd_sum);
+
+    //return sum;
 }
 
 int main() {
