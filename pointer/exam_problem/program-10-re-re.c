@@ -1,3 +1,4 @@
+// Beautiful array in c program...
 
 #include <stdio.h>
 
