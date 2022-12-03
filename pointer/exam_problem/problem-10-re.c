@@ -1,3 +1,5 @@
+// Beautiful array in c program...
+
 #include <stdio.h>
 
 int is_beatiful(int a[], int n) {
