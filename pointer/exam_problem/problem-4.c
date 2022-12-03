@@ -19,7 +19,7 @@ int main() {
 
 void consecutive_ev_nums(int num){
     int i;
-    for(i=2; i<=num/3; i+=2){
+    for(i = 2; i <= num / 3; i += 2){
         int sum = i + i + 2 + i + 4 + i + 6;
 
         if(sum == num){
