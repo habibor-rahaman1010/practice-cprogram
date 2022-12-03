@@ -9,11 +9,12 @@ int is_beautiful(int *ara, int *n) {
         for(j = 0; j < *(a + i); j++){
              if(*(ara + i) % 10 == 7){
                 counter++;
-                *(ara + j) /= 10;
-            };
+            }
+            *(ara + j) /= 10;
         }
     }
 
+    printf("%d", counter);
     if(counter >= half){
         return 1;
     }
@@ -21,30 +22,6 @@ int is_beautiful(int *ara, int *n) {
         return 0;
     }
 }
-
-
-int is_beatiful(int a[], int n)
-{
-   int count=0, i=0, half=n/2;
-   int *ar = &a[0];
-   for(i=0; i<n; i++)
-   {
-      int num = *(ar+i);
-      while(num > 0)
-      {
-         if(num%10==7)
-            count++;
-
-         num/=10;
-      }
-   }
-   if(count >= half)
-      return 1;
-   else
-      return 0;
-}
-
-
 
 
 int main() {
