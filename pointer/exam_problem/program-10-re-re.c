@@ -15,7 +15,6 @@ int is_beautiful(int ara[], int *n) {
         }
     }
 
-    printf("%d", counter);
     if(counter >= half){
         return 1;
     }
@@ -35,7 +34,8 @@ int main() {
         scanf("%d", &ara[i]);
     }
 
-    int ans = is_beautiful(ara, &n);
+    int beautiful_array = is_beautiful(ara, &n);
+    beautiful_array ? printf("Beautiful\n") : printf("Ugly\n");
 
 return 0;
 }

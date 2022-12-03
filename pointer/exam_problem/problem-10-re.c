@@ -29,8 +29,7 @@ int main()
    scanf("%d", &N);
 
    int a[N];
-   for(i=0; i<N; i++)
-   {
+   for(i=0; i<N; i++){
       scanf("%d", &a[i]);
    }
    int beauty = is_beatiful(a, N);
