@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int is_beautiful(int *ara, int *n) {
+int is_beautiful(int ara[], int *n) {
     int i = 0, j, counter = 0;
     int *a = &ara[0], half = *n / 2;
 
@@ -39,3 +39,4 @@ int main() {
 
 return 0;
 }
+
