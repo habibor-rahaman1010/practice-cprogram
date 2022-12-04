@@ -16,12 +16,12 @@ int main() {
         int i;
         printf("Enter the element of array: ");
         for(i = 0; i < N; i++){
-            scanf("%d", &ptr[i]);
+            scanf("%d", (ptr + i));
         }
         printf("\nPrinted the array\n");
 
         for(i = 0; i < N; i++){
-            printf("%d ", ptr[i]);
+            printf("%d ", *(ptr + i));
         }
 
         int memory_size = (int) sizeof(*ptr) * N;
@@ -40,3 +40,4 @@ int main() {
 
 return 0;
 }
+
