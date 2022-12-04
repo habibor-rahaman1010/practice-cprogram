@@ -1,4 +1,4 @@
-
+// memory reaccloc in c program...
 
 #include <stdio.h>
 #include <stdlib.h>
