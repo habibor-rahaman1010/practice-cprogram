@@ -1,4 +1,4 @@
-// memory realloc for malloc in c program...
+// memory realloc for calloc in c program...
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,7 +8,7 @@ int main() {
     printf("Enter value of N: ");
     scanf("%d", &N);
 
-    int *ptr = (int *) malloc(N * sizeof(int));
+    int *ptr = (int *) calloc(N, sizeof(int));
     if(ptr == NULL){
         printf("Memory allocation dose not succes");
     }
@@ -16,12 +16,12 @@ int main() {
         int i;
         printf("Enter the element of array: ");
         for(i = 0; i < N; i++){
-            scanf("%d", (ptr + i));
+            scanf("%d", &ptr[i]);
         }
         printf("\nPrinted the array\n");
 
         for(i = 0; i < N; i++){
-            printf("%d ", *(ptr + i));
+            printf("%d ", ptr[i]);
         }
 
         int memory_size = (int) sizeof(*ptr) * N;

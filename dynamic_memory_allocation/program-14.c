@@ -8,7 +8,7 @@ int main() {
     printf("Enter value of N: ");
     scanf("%d", &N);
 
-    int *ptr = (int *) malloc(N * sizeof(int));
+    int *ptr = (int *) calloc(N, sizeof(int));
     if(ptr == NULL){
         printf("Memory allocation dose not succes");
     }
@@ -40,4 +40,5 @@ int main() {
 
 return 0;
 }
+
 

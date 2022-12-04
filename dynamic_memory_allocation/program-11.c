@@ -1,4 +1,4 @@
-// memory realloc in c program...
+// memory realloc for malloc in c program...
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,7 +25,7 @@ int main() {
         }
 
         int memory_size = (int) sizeof(*ptr) * N;
-        printf("\nbefore memory size: %d", memory_size);
+        printf("\nbefore memory size: %d byte.", memory_size);
 
         int new_memory;
         printf("\nEnter new memory size: ");
@@ -33,7 +33,7 @@ int main() {
 
         ptr = realloc(ptr, new_memory * sizeof(int));
         memory_size = (int) sizeof(*ptr) * new_memory + memory_size;
-        printf("After memory size: %d \n", memory_size);
+        printf("After memory size: %d byte\n", memory_size);
 
         free(ptr);
     }
