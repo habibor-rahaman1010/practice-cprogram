@@ -26,6 +26,7 @@ int main() {
         }
         printf("\n");
     }
+    free(ptr);
 
 return 0;
 }
