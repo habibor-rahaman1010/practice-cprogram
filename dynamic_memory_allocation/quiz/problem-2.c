@@ -1,8 +1,9 @@
 #include <stdio.h>
 int main()
 {
-  int a=10;
-  float b;
-  b=a;
+  double a = 2.5;
+  int b;
+  b = (int) a + 5;
+  printf("%d", b);
   return 0;
 }
