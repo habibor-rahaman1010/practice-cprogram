@@ -1,4 +1,4 @@
-// memory allocate and re allocate in c program use malloc...
+// memory allocate and re allocate in c program use calloc...
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,7 +8,7 @@ int main() {
     printf("Enter the value of N: ");
     scanf("%d", &N);
 
-    int *ptr = (int *) malloc(N * sizeof(int));
+    int *ptr = (int *) calloc(N, sizeof(int));
     if(ptr == NULL){
         printf("Memory allocated failed try again! \n");
     }
