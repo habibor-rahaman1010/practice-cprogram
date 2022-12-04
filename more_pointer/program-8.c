@@ -18,14 +18,15 @@ int main() {
         int i;
         printf("Enter the element of an array: ");
         for(i = 0; i < n; i++){
-            scanf("%d", &ptr[i]);
+            scanf("%d", (ptr + i));
         }
         printf("Print the element of an array \n");
         for(i = 0; i < n; i++){
-            printf("%d ", ptr[i]);
+            printf("%d ", *(ptr + i));
         }
         printf("\n");
     }
 
 return 0;
 }
+
