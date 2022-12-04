@@ -42,6 +42,7 @@ int main() {
             for(i = 0; i < N + new_size; i++){
                 printf("%d ", ptr[i]);
             }
+            printf("\n");
         }
 
     }
