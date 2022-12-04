@@ -5,12 +5,12 @@
 void max_min(int num1, int num2, int *ptr1, int *ptr2) {
 
     *ptr1 = num1 > num2 ? num1 : num2;
-    *ptr2 = num2 < num1 ? num2 : num1;
+    *ptr2 = num1 < num2 ? num1 : num2;
 
 }
 
 int main() {
-    int num1 = 32, num2 = 12;
+    int num1 = 2, num2 = 12;
     int large = 0, small = 0;
 
     max_min(num1, num2, &large, &small);
