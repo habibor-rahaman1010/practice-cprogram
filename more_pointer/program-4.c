@@ -8,6 +8,9 @@ int main() {
     double b;
     char c;
 
-    b = 25 / 2;
-    printf("%lf", a);
+    a = (int)25 / 2.0;
+    printf("%d \n", a);
+
+    b = (double)25 / 2.0; //type casting...
+    printf("%lf \n", b);
 }
