@@ -12,7 +12,7 @@ int main() {
     ara = (int *) calloc(N, sizeof(int));
 
     if(ara == NULL){
-        printf("Memory allocation dose not successful yet!");
+        printf("Memory allocation dose not successful yet! \n");
     }
     else{
         int i;

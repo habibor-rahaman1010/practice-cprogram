@@ -12,7 +12,7 @@ int main() {
     ptr = (int *) malloc(n * sizeof(int));
 
     if(ptr == NULL){
-        printf("Memory allocation is failed for some reason!");
+        printf("Memory allocation is failed for some reason! \n");
     }
     else{
         int i;

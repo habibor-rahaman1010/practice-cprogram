@@ -10,7 +10,7 @@ int main() {
 
     int *ptr = (int *) calloc(N, sizeof(int));
     if(ptr == NULL){
-        printf("Memory allocation dose not succes");
+        printf("Memory allocation dose not success \n");
     }
     else{
         int i;
