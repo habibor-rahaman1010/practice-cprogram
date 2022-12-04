@@ -20,7 +20,7 @@ int main() {
         for(i = 0; i < n; i++){
             scanf("%d", (ptr + i));
         }
-        printf("Print the element of an array \n");
+        printf("\nPrint the element of an array \n");
         for(i = 0; i < n; i++){
             printf("%d ", *(ptr + i));
         }

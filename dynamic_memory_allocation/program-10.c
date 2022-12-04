@@ -9,21 +9,21 @@ int main() {
     scanf("%d", &N);
 
     int *ara;
-    ara = (int *) calloc(N, sizeof(int *));
+    ara = (int *) calloc(N, sizeof(int));
 
     if(ara == NULL){
-        printf("Memory allocation dose not success yet!");
+        printf("Memory allocation dose not successful yet!");
     }
     else{
         int i;
-        printf("Enter values of array: ");
+        printf("Enter array element: ");
         for(i = 0; i < N; i++){
-            scanf("%d", &ara[i]);
+            scanf("%d", (ara + i));
         }
 
-        printf("\nPrint elements of an array\n");
+        printf("\nPrint the array element\n");
         for(i = 0; i < N; i++){
-            printf("%d ", ara[i]);
+            printf("%d ", *(ara + i));
         }
         printf("\n");
         free(ara);
