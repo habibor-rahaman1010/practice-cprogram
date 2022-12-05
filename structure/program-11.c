@@ -1,27 +1,17 @@
 #include <stdio.h>
 
 int main(void) {
-
-  // student structure
   struct student {
     char id[15];
     char firstname[64];
     char lastname[64];
     float points;
   };
-
-  // student structure variable
   struct student std[3];
+  struct student *ptr;
 
-  // student structure pointer variable
-  struct student *ptr = NULL;
-
-  // other variables
   int i;
-
-  // assign std to ptr
   ptr = std;
-
   // get detail for user
   for (i = 0; i < 3; i++) {
     printf("Enter detail of student #%d\n", (i + 1));
