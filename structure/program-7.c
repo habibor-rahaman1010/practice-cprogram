@@ -11,30 +11,30 @@ struct Student {
 };
 
 int main() {
-    struct Student s;
     int n;
     printf("Enter the value of n: ");
     scanf("%d", &n);
 
+    struct Student s[n];
+
     for(int i = 1; i <= n; i++){
         printf("Enter value of student %d \n", i);
-        scanf("%d", &s.id);
-        scanf("%s", s.name);
-        scanf("%d", &s.age);
-        scanf("%s", s.gender);
-        scanf("%f", &s.weight);
+        scanf("%d", &s[i].id);
+        scanf("%s", s[i].name);
+        scanf("%d", &s[i].age);
+        scanf("%s", s[i].gender);
+        scanf("%f", &s[i].weight);
     }
 
     printf("\n");
     for(int i = 1; i <= n; i++){
-        printf("%d\n", s.id);
-        printf("%s\n", s.name);
-        printf("%d\n", s.age);
-        printf("%s\n", s.gender);
-        printf("%0.2f\n", s.weight);
+        printf("%d\n", s[i].id);
+        printf("%s\n", s[i].name);
+        printf("%d\n", s[i].age);
+        printf("%s\n", s[i].gender);
+        printf("%0.2f\n", s[i].weight);
+        printf("\n");
     }
-
-    printf("\n");
 
 return 0;
 }
