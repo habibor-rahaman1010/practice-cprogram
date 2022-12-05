@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
   struct student {
     char id[15];
     char firstname[64];
@@ -28,22 +28,12 @@ int main(void) {
     // of the array std
     ptr++;
   }
-
   // reset pointer back to the starting
   // address of std array
   ptr = std;
 
   for (i = 0; i < 3; i++) {
     printf("\nDetail of student #%d\n", (i + 1));
-
-    // display result via std variable
-    printf("\nResult via std\n");
-    printf("ID: %s\n", std[i].id);
-    printf("First Name: %s\n", std[i].firstname);
-    printf("Last Name: %s\n", std[i].lastname);
-    printf("Points: %f\n", std[i].points);
-
-    // display result via ptr variable
     printf("\nResult via ptr\n");
     printf("ID: %s\n", ptr->id);
     printf("First Name: %s\n", ptr->firstname);
