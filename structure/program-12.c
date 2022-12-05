@@ -1,19 +1,12 @@
-# include <stdio.h>
-# include <string.h>
+#include<stdio.h>
 
-struct Name
+struct Point
 {
-  char str[20];
+  int x, y, z;
 };
 
 int main()
 {
-  struct Name st1, st2;
-  strcpy(st1.str,"ProgrammingHero");
-  st2 = st1;
-  st1.str[0] = 'p';
-
-  printf("%s",st2.str);
-
+  struct Point p = {.y = 5, .z = 10, .x = 20};
   return 0;
 }
