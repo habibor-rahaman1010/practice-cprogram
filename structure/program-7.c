@@ -26,7 +26,7 @@ int main() {
     }
 
     printf("\n");
-    for(int i = 1; i < n; i++){
+    for(int i = 1; i <= n; i++){
         printf("%d\n", s.id);
         printf("%s\n", s.name);
         printf("%d\n", s.age);
