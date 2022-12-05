@@ -11,7 +11,13 @@ struct Student {
 };
 
 int main() {
-    struct Student s = {.name = "Habibor Rahaman", .age = 22, .gender = "Meal", .weight = 54.5 .id = 144369};
+    struct Student s = {
+        .gender = "Meal",
+        .name = "Habibor Rahaman",
+        .age = 22,
+        .weight = 54.5,
+        .id = 144369,
+    }; //designated
 
     printf("%d\n", s.id);
     printf("%s\n", s.name);
