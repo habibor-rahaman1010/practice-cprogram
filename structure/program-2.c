@@ -1,23 +1,23 @@
 //Structure in c program...
 
 #include <stdio.h>
+#include <string.h>
 
 struct Student {
     int id;
-    char *name;
+    char name[30];
     int age;
-    char *gender;
+    char gender[10];
     float weight;
 };
 
 int main() {
-    struct Student s = {
-        144369,
-        "Habibor Rahaman",
-        22,
-        "Meal",
-        54.5
-    };
+    struct Student s;
+    s.id = 144369;
+    strcpy(s.name, "Habibor Rahaman");
+    s.age = 22;
+    strcpy(s.gender, "Meal");
+    s.weight = 54.5;
 
     printf("%d\n", s.id);
     printf("%s\n", s.name);
@@ -27,4 +27,5 @@ int main() {
 
 return 0;
 }
+
 
