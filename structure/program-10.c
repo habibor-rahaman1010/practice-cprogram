@@ -16,26 +16,28 @@ int main() {
     scanf("%d", &n);
 
     struct Student s[n + 1];
-    struct Student *sp = s;
+    struct Student *ptr = s;
 
     for(int i = 1; i <= n; i++){
         printf("Enter value of student %d \n", i);
-        scanf("%d", (sp->id));
-        scanf("%s", (sp->name));
-        scanf("%d", (sp->age));
-        scanf("%s", (sp->gender));
-        scanf("%f", (sp->weight));
+        scanf("%d", (ptr->id));
+        scanf("%s", (ptr->name));
+        scanf("%d", (ptr->age));
+        scanf("%s", (ptr->gender));
+        scanf("%f", (ptr->weight));
+        ptr++;
     }
 
     printf("\n");
     for(int i = 1; i <= n; i++){
         printf("Value of student %d \n", i);
-        printf("%d\n", (sp->id));
-        printf("%s\n", (sp->name));
-        printf("%d\n", (sp->age));
-        printf("%s\n", (sp->gender));
-        printf("%0.2f\n", (sp->weight));
+        printf("%d\n", (ptr->id));
+        printf("%s\n", (ptr->name));
+        printf("%d\n", (ptr->age));
+        printf("%s\n", (ptr->gender));
+        printf("%0.2f\n", (ptr->weight));
         printf("\n");
+        ptr++;
     }
 
 return 0;
