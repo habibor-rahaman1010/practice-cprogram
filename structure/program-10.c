@@ -16,7 +16,7 @@ int main() {
     scanf("%d", &n);
 
     struct Student s[n + 1];
-    struct Student *sp = &s;
+    struct Student *sp = s;
 
     for(int i = 1; i <= n; i++){
         printf("Enter value of student %d \n", i);
