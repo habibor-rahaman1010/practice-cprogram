@@ -15,7 +15,7 @@ int main() {
     printf("Enter the value of n: ");
     scanf("%d", &n);
 
-    struct Student s[n];
+    struct Student s[n + 1];
 
     for(int i = 1; i <= n; i++){
         printf("Enter value of student %d \n", i);
@@ -28,6 +28,7 @@ int main() {
 
     printf("\n");
     for(int i = 1; i <= n; i++){
+        printf("Value of student %d \n", i);
         printf("%d\n", s[i].id);
         printf("%s\n", s[i].name);
         printf("%d\n", s[i].age);
