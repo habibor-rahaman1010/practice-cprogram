@@ -20,21 +20,21 @@ int main() {
 
     for(int i = 1; i <= n; i++){
         printf("Enter value of student %d \n", i);
-        scanf("%d", (sp + i)->id);
-        scanf("%s", (sp + i)->name);
-        scanf("%d", (sp + i)->age);
-        scanf("%s", (sp + i)->gender);
-        scanf("%f", (sp + i)->weight);
+        scanf("%d", (sp->id));
+        scanf("%s", (sp->name));
+        scanf("%d", (sp->age));
+        scanf("%s", (sp->gender));
+        scanf("%f", (sp->weight));
     }
 
     printf("\n");
     for(int i = 1; i <= n; i++){
         printf("Value of student %d \n", i);
-        printf("%d\n", (sp + i)->id);
-        printf("%s\n", (sp + i)->name);
-        printf("%d\n", (sp + i)->age);
-        printf("%s\n", (sp + i)->gender);
-        printf("%0.2f\n", (sp + i)->weight);
+        printf("%d\n", (sp->id));
+        printf("%s\n", (sp->name));
+        printf("%d\n", (sp->age));
+        printf("%s\n", (sp->gender));
+        printf("%0.2f\n", (sp->weight));
         printf("\n");
     }
 
