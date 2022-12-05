@@ -7,14 +7,18 @@ int main() {
     char lastname[64];
     float points;
   };
-  struct student std[3];
+  int n;
+  printf("Enter the value of n: ");
+  scanf("%d", &n);
+
+  struct student std[n];
   struct student *ptr;
 
   int i;
   ptr = std;
   // get detail for user
-  for (i = 0; i < 3; i++) {
-    printf("Enter detail of student #%d\n", (i + 1));
+  for (i = 1; i <= n; i++) {
+    printf("Enter detail of student #%d\n", (i));
     printf("Enter ID: ");
     scanf("%s", ptr->id);
     printf("Enter first name: ");
@@ -32,8 +36,8 @@ int main() {
   // address of std array
   ptr = std;
 
-  for (i = 0; i < 3; i++) {
-    printf("\nDetail of student #%d\n", (i + 1));
+  for (i = 1; i <= n; i++) {
+    printf("\nDetail of student #%d\n", (i));
     printf("\nResult via ptr\n");
     printf("ID: %s\n", ptr->id);
     printf("First Name: %s\n", ptr->firstname);
