@@ -4,9 +4,9 @@
 
 struct Student {
     int id;
-    char *name;
+    char name[30];
     int age;
-    char *gender;
+    char gender[10];
     float weight;
 };
 
@@ -16,8 +16,9 @@ int main() {
     scanf("%s", s.name);
     scanf("%d", &s.age);
     scanf("%s", s.gender);
-    scanf("%lf", &s.weight);
+    scanf("%f", &s.weight);
 
+    printf("\n");
     printf("%d\n", s.id);
     printf("%s\n", s.name);
     printf("%d\n", s.age);
