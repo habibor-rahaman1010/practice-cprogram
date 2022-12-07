@@ -24,12 +24,16 @@ int main() {
     }
     printf("\n");
 
+    // when id value is even then print the student details...
     for(i = 0; i < n; i++){
-        printf("Value of student %d: \n", (i + 1));
-        printf("%d \n", ara[i].id);
-        printf("%s \n", ara[i].name);
-        printf("%f \n", ara[i].marks);
-        printf("\n");
+        if(ara[i].id % 2 == 0){
+            printf("Value of student %d: \n", (i + 1));
+            printf("%d \n", ara[i].id);
+            printf("%s \n", ara[i].name);
+            printf("%f \n", ara[i].marks);
+            printf("\n");
+        }
     }
 return 0;
 }
+
