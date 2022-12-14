@@ -1,0 +1,1 @@
+Enter the value of N: Total sum is: 55
